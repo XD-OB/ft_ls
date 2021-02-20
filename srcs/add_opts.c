@@ -57,7 +57,7 @@ void			add_opts(t_ls *ls, char *s)
 			write(2, "ft_ls: illegal option -- ", 22);
 			ft_putchar_fd(*s, 2);
 			ft_putchar_fd('\n', 2);
-			write(2, "usage: ft_ls [-1lartuiogmpncRSAG] [file ...]\n", 42);
+			ft_putstr_fd("usage: ft_ls [-1lartuiogmpncRSAG] [file ...]\n", 2);
 			exit(1);
 		}
 		(*s == 't') ? set_t(ls) : 0;
